@@ -1,18 +1,68 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+__pycache__
+*.py[cod]
 
-# Other files and folders
-.settings/
+# C extensions
+*.so
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Packages
+*.egg
+*.egg-info
+*.eggs
+dist
+deb_dist
+build
+_build
+eggs
+parts
+var
+sdist
+develop-eggs
+.installed.cfg
+MANIFEST
+env
+onionshare-*.tar.gz
+onionshare_*.snap
+.flatpak-builder
+OnionShare.flatpak
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+.cache
+.pytest_cache
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# vim
+*.swp
+
+# tags
+ctags
+tags
+
+# OSX
+.DS_Store
+
+# virtualenv
+venv
+
+# other
+.vscode
+onionshare.dist-info
+desktop/src/onionshare/resources/tor
+desktop/*.whl
+desktop/linux
+desktop/windows
+desktop/macOS
+# gets added automatically when building for Windows or macOS
+desktop/include
