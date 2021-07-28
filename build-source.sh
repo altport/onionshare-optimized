@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# The script builds a source package
+# builds source package
 
 # Usage
 display_usage() {
@@ -36,8 +36,8 @@ fi
 mkdir -p build/source
 mkdir -p dist
 cd build/source
-git clone https://github.com/micahflee/onionshare.git
-cd onionshare
+git clone https://github.com/altport/onionshare-optimized.git
+cd onionshare-optimized
 
 # Verify tag
 git tag -v $TAG 2> ../verify.txt
@@ -65,14 +65,14 @@ git checkout $TAG
 # Delete .git, compress, and PGP sign
 cd ..
 rm -rf onionshare/.git
-tar -cf onionshare-$VERSION.tar.gz onionshare/
+tar -cf onionshare-optimized-$VERSION.tar.gz onionshare-optimized/
 
 # Move source package to dist
 cd ../..
-mv build/source/onionshare-$VERSION.tar.gz dist
+mv build/source/onionshare-optimized-$VERSION.tar.gz dist
 
 # Clean up
-rm -rf build/source/onionshare
+rm -rf build/source/onionshare-optimized
 rm build/source/verify.txt
 
 echo "Source package complete, file in dist"
