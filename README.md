@@ -11,3 +11,5 @@ cd build/source
 git clone https://github.com/altport/onionshare-optimized.git
 cd onionshare-optimized
 ```
+  
+  
